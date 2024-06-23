@@ -5,10 +5,10 @@ public class Day4_3{
         Scanner scanner = new Scanner(System.in);
         
         System.out.println("Enter the length of the rectangle ");
-        double length = Integer.valueOf(scanner.nextLine());
+        double length = Double.valueOf(scanner.nextLine());
 
         System.out.println("Enter the width of the rectangle ");
-        double width = Integer.valueOf(scanner.nextLine());
+        double width = Double.valueOf(scanner.nextLine());
 
         double area = length * width;
 
