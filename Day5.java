@@ -16,7 +16,7 @@ public class Day5 {
         int age = Integer.parseInt(input);
 
         if (age < 150) {
-            System.out.println("You are " + age + " years old");
+            System.out.println("You are " + age + " years old!");
         } else {
             System.out.println("Impossible");
             scanner.close();
@@ -44,6 +44,8 @@ public class Day5 {
         String text = "";
         if (age % 2 == 0) {
             text = "Your age  is an even number";
+        }else{
+            text = "Your age is an odd number";
         }
 
         System.out.println("The factorial of " + age + " is: " + factorial);

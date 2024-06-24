@@ -27,4 +27,16 @@ The program prompts the user to enter the length of the rectangle by printing a 
 The program repeats the same process to obtain the width of the rectangle: it prompts the user, reads the input, converts it to a double, and stores it in the variable width. With both the length and width captured as decimal numbers, the program calculates the area of the rectangle by multiplying these two values. The result, stored in the variable area, is also a double, ensuring that the calculation can handle and maintain decimal precision.
 Finally, the program prints the calculated area to the console with a message indicating the result. The use of double data type throughout the program allows it to handle decimal inputs and outputs, making it suitable for applications requiring precision.
 
+# Day 5
+It begins by prompting the user to enter their age, reading this input as a string and checking if it's empty to ensure valid data entry. If the input is empty, the program informs the user that a blank entry is not accepted and terminates gracefully. Upon receiving a valid age input, the program converts it to an integer and checks if it's less than 150. If the age is within a valid range, it prints a message stating the age. If the age is 150 or more, it outputs "Impossible" and exits.
+After confirming a valid age, the program proceeds to increment the age by 1 for display purposes and prints this incremented value. It then resets the age back to its original value and calculates the factorial of the age using a loop. Additionally, it computes the sum of integers from 1 to the age and also calculates a subtraction value, which accumulates negative values due to its decrementing operation within the same loop.
+Following these calculations, the program computes the average of the values from 1 to the age, ensuring accuracy by using a double type to account for decimal places in the division operation. It also checks if the age is an even number and prepares a corresponding text message for output.
+Finally, the program prints the results of these calculations:
+The factorial of the age.
+The sum of integers up to the age.
+The cumulative subtraction of integers up to the age.
+The calculated average with precision to two decimal places.
+A message indicating if the age is an even number.
+To ensure proper resource management, the program closes the Scanner object used for input after completing all calculations and outputs.
+
 
