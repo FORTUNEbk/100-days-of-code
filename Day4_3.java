@@ -12,7 +12,9 @@ public class Day4_3{
 
         double area = length * width;
 
-        System.out.println ("The area of the rectangle is " + area );
+        String formattedArea = String.format("%.2f", area);
+
+        System.out.println ("The area of the rectangle is " + formattedArea );
 
         scanner.close();
 
