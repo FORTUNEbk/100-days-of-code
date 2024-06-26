@@ -42,7 +42,6 @@ Following these conversions, an integer number is initialized with the value 456
 # Day 7
 Initially, two double variables, num1 and num2, are declared and initialized with the values -5.4 and 3.7, respectively. The program then uses the Math.max() method to determine the maximum value between num1 and num2, storing the result in the variable max and printing it to the console. Similarly, the Math.min() method is used to find the minimum value between num1 and num2, with the result stored in min and printed.
 The code proceeds to demonstrate the calculation of the square root of a number. A double variable number is initialized with the value 16.0, and the Math.sqrt() method is used to compute its square root, storing the result in the variable sqrt and printing it. The program then illustrates the use of Math.floor() and Math.ceil() methods on a double variable floatNum initialized with the value 5.67. These methods compute the largest integer less than or equal to floatNum and the smallest integer greater than or equal to floatNum, respectively. The results are stored in floor and ceil and printed to the console.
-
 The cumulative subtraction of integers up to the age.
 The calculated average with precision to two decimal places.
 A message indicating if the age is an even number.
