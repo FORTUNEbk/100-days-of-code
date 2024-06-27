@@ -47,4 +47,11 @@ The calculated average with precision to two decimal places.
 A message indicating if the age is an even number.
 To ensure proper resource management, the program closes the Scanner object used for input after completing all calculations and outputs.
 
+# Day 8
+The Day8 class in the provided code is designed to perform three distinct operations based on user input: checking if a number is odd or even, finding the largest of three numbers, and determining if a given year is a leap year. The class utilizes the Scanner class from the java.util package to read user inputs from the console.
+The main method is the entry point of the program. It starts by creating a Scanner object to capture user input and presents a menu to the user with three options: "Check Odd or Even," "Find Largest of Three Numbers," and "Check Leap Year." The user is prompted to enter their choice, which is then read as an integer. Based on the user’s choice, a corresponding method is invoked using a switch-case structure.
+The checkOddEven method prompts the user to enter an integer and then determines if the number is odd or even. This is done by checking the remainder of the number when divided by 2 using the modulus operator (%). If the remainder is zero, the number is even; otherwise, it is odd. The result is printed to the console.
+The findLargestOfThree method asks the user to input three double values. It then determines the largest of the three numbers using a series of conditional statements. The result is stored in a variable named largest, which is then printed out.
+The checkLeapYear method prompts the user to enter a year. It checks if the year is a leap year using the standard leap year rules: a year is a leap year if it is divisible by 4 but not by 100, or if it is divisible by 400. The result is printed to the console.
+
 
