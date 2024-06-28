@@ -54,4 +54,10 @@ The checkOddEven method prompts the user to enter an integer and then determines
 The findLargestOfThree method asks the user to input three double values. It then determines the largest of the three numbers using a series of conditional statements. The result is stored in a variable named largest, which is then printed out.
 The checkLeapYear method prompts the user to enter a year. It checks if the year is a leap year using the standard leap year rules: a year is a leap year if it is divisible by 4 but not by 100, or if it is divisible by 400. The result is printed to the console.
 
+# Day 9
+The program begins by importing the Scanner class from the java.util package to facilitate user input. The class Day9 contains the main method, which serves as the entry point for the program's execution.
+Within the main method, a Scanner object named scanner is instantiated to read input from the user. The program then prompts the user to "Enter your percentage:" and reads the inputted integer value using the nextInt() method of the Scanner class. This integer, representing the percentage score, is stored in the variable percentage.
+To determine the corresponding letter grade, the program first calculates the grade range by dividing the percentage by 10. This division simplifies the percentage into a more manageable range, allowing the switch statement to handle it effectively. The result of this division is stored in the variable gradeRange.
+The switch statement evaluates the value of gradeRange and assigns a letter grade based on the case that matches the value. If gradeRange is 10 or 9, the letter grade 'A' is assigned. If it is 8, the grade 'B' is assigned. Similarly, if it is 7, 'C' is assigned, and if it is 6, 'D' is assigned. Any other value falls under the default case, assigning the grade 'F'.
+
 
