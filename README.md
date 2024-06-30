@@ -77,7 +77,7 @@ Inside the while loop, which runs indefinitely (while (true)), a random integer 
 Following the print statement, an if statement checks if the generated number num is divisible by both 5 and 7. This is done using the condition num % 5 == 0 && num % 7 == 0. If this condition is true, indicating that num is divisible by both 5 and 7 without remainder, the program executes the statements within the if block.
 Within the if block, it prints a message indicating that a number divisible by both 5 and 7 has been found, along with the value of num. After printing this message, the break statement is encountered, which terminates the while loop. This break statement exits the loop immediately upon finding a number that satisfies the condition, ensuring that the program does not continue generating numbers unnecessarily once the desired number is found.
 
-#Day 11
+# Day 11
 The Day11 class in Java demonstrates various operations on strings using static methods. Each method encapsulates a specific string manipulation or utility function, and the main method showcases the usage of these methods through a series of examples.
 The stringLength method takes a string as input and returns its length using the length() method. The stringConcatenation method concatenates two strings using the + operator and returns the result. The stringComparison method compares two strings for equality using the equals() method and returns a boolean indicating if they are the same.
 The stringToUppercase method converts a string to uppercase using the toUpperCase() method, while the stringToLowercase method converts a string to lowercase using the toLowerCase() method. The stringTrimming method removes any leading and trailing whitespace from a string using the trim() method.
