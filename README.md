@@ -86,4 +86,10 @@ The stringReversal method reverses a string by converting it to a StringBuilder,
 In the main method, various string operations are demonstrated. It starts by defining four strings: str1 (" Hello, World! "), str2 ("Java"), str3 ("hello"), and str4 ("HELLO"). The string length of str1 is printed, followed by the result of concatenating str1 and str2. The method then compares str1 with str2 and str3 with str4 (both converted to lowercase for case-insensitive comparison).
 Next, the methods to convert str1 to uppercase and lowercase are demonstrated, followed by trimming the whitespace from str1. A substring of str1 from index 1 to 6 is extracted and printed. The string splitting functionality is demonstrated by splitting str1 using a comma delimiter, and the resulting substrings are printed.
 
+# Day 12
+Day12 that contains a main method. This method serves as the entry point of the program. Within the main method, two objects are created, one of the StringBuffer class and one of the StringBuilder class, both initialized with the string "Hello".
+For the StringBuffer object, the append method is called twice: first to append a space character (" ") and then to append the string "World". The resulting concatenated string is then printed to the console with the label "StringBuffer: ".
+Similarly, for the StringBuilder object, the append method is used twice in the same manner: first to append a space character and then to append the string "World". The concatenated string is then printed to the console with the label "StringBuilder: ".
+This code demonstrates the usage of StringBuffer and StringBuilder for modifying strings in Java, highlighting their ability to efficiently handle string concatenations. The key difference is that StringBuffer is synchronized and thread-safe, making it suitable for use in multi-threaded environments, while StringBuilder is not synchronized and thus more efficient for use in single-threaded environments.
+
 
