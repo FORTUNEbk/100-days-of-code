@@ -92,4 +92,28 @@ For the StringBuffer object, the append method is called twice: first to append 
 Similarly, for the StringBuilder object, the append method is used twice in the same manner: first to append a space character and then to append the string "World". The concatenated string is then printed to the console with the label "StringBuilder: ".
 This code demonstrates the usage of StringBuffer and StringBuilder for modifying strings in Java, highlighting their ability to efficiently handle string concatenations. The key difference is that StringBuffer is synchronized and thread-safe, making it suitable for use in multi-threaded environments, while StringBuilder is not synchronized and thus more efficient for use in single-threaded environments.
 
+# Day 13_1
+Inside the main method, an array of integers named numbers is initialized with the values {10, 20, 30, 40, 50}.
+Next, an integer variable sum is initialized to 0. A for-each loop is used to iterate over each element in the numbers array. During each iteration, the current element (represented by the variable num) is added to sum, thus calculating the total sum of all elements in the array.
+After the loop, a double variable average is calculated by dividing the sum by the length of the numbers array. To ensure the division is performed as floating-point division, sum is explicitly cast to double.
+Finally, the average value is printed to the console using System.out.println, which outputs the message "The average is: " followed by the calculated average value.
+
+# Day 13_2
+It contains a main method that serves as the entry point of the Java application. Within the main method, an integer array named sourceArray is initialized with the values {10, 20, 30, 40, 50}. Following this, another integer array named destinationArray is declared with the same length as sourceArray.
+The program then uses a for loop to iterate over each index of sourceArray. During each iteration, the value at the current index in sourceArray is copied to the corresponding index in destinationArray. This loop effectively duplicates the contents of sourceArray into destinationArray.
+After copying the elements, the program prints "Destination array: " to the console. It then uses another for-each loop to iterate over each element in destinationArray, printing each element followed by a space. This results in the entire contents of destinationArray being displayed on a single line in the console.
+
+# Day 14
+ It contains a main method and several helper methods for array operations. The main method initializes a two-dimensional array array with predefined integer values and performs various operations on it.
+First, the main method prints the original array to the console using the printArray method, which iterates through the array and prints its elements in a formatted manner. Then, it calls the maxInRows method to find the maximum values in each row of the array. This method iterates through each row, finds the maximum value in each row, and stores these values in a new array maxValues, which is then printed using the printArray method.
+Next, the main method calls the maxInColumns method to find the maximum values in each column of the array. This method iterates through each column, finds the maximum value in each column, and stores these values in a new array maxValues, which is also printed using the printArray method.
+After that, the main method calls the transpose method to transpose the original array. The transpose method swaps the rows and columns of the array, creating a new transposed array transposed, which is then printed using the printArray method.
+The printArray method is overloaded to handle both one-dimensional and two-dimensional arrays. For two-dimensional arrays, it prints each element of each row followed by a space and a newline after each row. For one-dimensional arrays, it prints each element followed by a space and a newline at the end.
+
+# Day 15
+Day15, which contains a main method and a helper method for manipulating an ArrayList of strings representing the days of the week. The program performs several operations on this list, including sorting and removing specific elements.
+First, the main method initializes an ArrayList named weekdays and populates it with the names of the days from Monday to Sunday. It then prints the original list to the console.
+Next, the program sorts the weekdays list in increasing alphabetical order using the Collections.sort method, which sorts the elements in the list. The sorted list is then printed to the console.
+Following this, the program sorts the weekdays list in decreasing alphabetical order by using Collections.sort in combination with Collections.reverseOrder. The Collections.reverseOrder method provides a comparator that sorts the elements in reverse order. The resulting list is printed to the console.
+The program then declares a character variable removeChar with the value 'T'. This character is used to remove elements from the weekdays list that start with 'T'. The removeElementsStartingWith method is called with the weekdays list and the removeChar as arguments. This method uses the removeIf method along with a lambda expression (day -> day.charAt(0) == startChar) to remove any elements whose first character matches removeChar. Finally, the modified list is printed to the console.
 
