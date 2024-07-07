@@ -5,7 +5,6 @@ public class Day16{
     }
 
     public static void main(String[] args) {
-        // Print all elements in the enum
         for (Weekdays day : Weekdays.values()) {
             System.out.println(day);
         }
