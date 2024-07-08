@@ -127,3 +127,18 @@ The program starts by retrieving the current date using LocalDate.now() and prin
 Next, it creates a specific LocalDate for January 1, 2023, and prints it. The program then compares the current date with this anotherDate using both isBefore and isAfter methods, printing whether the current date is before or after anotherDate. It further uses the compareTo method to compare the two dates, printing whether the current date is before, after, or equal to anotherDate based on the comparison result.
 The program proceeds to work with the current date and time, including time zone information, by using ZonedDateTime.now(). A DateTimeFormatter is defined to format the date and time in a specific pattern. The program converts the current date and time to different time zones: GMT, CST (Central Standard Time), and IST (Indian Standard Time), using withZoneSameInstant(ZoneId.of("GMT")), ZoneId.of("CST", ZoneId.SHORT_IDS), and ZoneId.of("Asia/Kolkata"), respectively, and prints the formatted dates in these time zones.
 
+# Day 18_1
+public class Day18_1 which contains a static method isPrime and a main method. The isPrime method is designed to check whether a given integer is a prime number. It takes an integer parameter number and returns a boolean value. The method first checks if the number is less than or equal to 1, in which case it returns false because numbers less than or equal to 1 are not prime. If the number is greater than 1, it proceeds to a for loop that runs from 2 to the square root of the number (inclusive). This loop checks if the number is divisible by any integer in this range. If it finds any such integer, it returns false because the number is not prime. If the loop completes without finding any divisors, the method returns true, indicating the number is prime.
+The main method is the entry point of the program. It calls the isPrime method twice with the arguments 5 and 4, respectively, and prints the results to the console. The output will be true for the input 5, since 5 is a prime number, and false for the input 4, since 4 is not a prime number (it is divisible by 2). This demonstrates the functionality of the isPrime method.
+
+# Day 18_2
+Day18_2 which contains a static method countVowels and a main method. The countVowels method is designed to count the number of vowels in a given string. It takes a string parameter input and returns an integer representing the number of vowels. The method initializes a counter vowelCount to zero. It then converts the input string to lowercase to ensure the method is case-insensitive when checking for vowels. Next, it iterates over each character in the string using a for loop. For each character, it checks if the character is one of the vowels ('a', 'e', 'i', 'o', 'u'). If it is, the counter vowelCount is incremented by one. After the loop completes, the method returns the total count of vowels found in the string.
+The main method is the entry point of the program. It calls the countVowels method twice with the strings "Hello World" and "Java Programming", respectively, and prints the results to the console. The output for "Hello World" will be 3 because it contains the vowels 'e', 'o', and 'o'. The output for "Java Programming" will be 5 because it contains the vowels 'a', 'a', 'o', 'a', and 'i'. This demonstrates the functionality of the countVowels method.
+
+
+
+
+
+
+
+
