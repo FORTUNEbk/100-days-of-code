@@ -12,7 +12,7 @@ public class Day18_2 {
     }
 
     public static void main(String[] args) {
-        System.out.println(countVowels("Hello World")); // 3
-        System.out.println(countVowels("Java Programming")); // 5
+        System.out.println(countVowels("Hello World")); 
+        System.out.println(countVowels("Java Programming")); 
     }
 }
