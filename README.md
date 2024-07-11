@@ -1,4 +1,4 @@
-                                                                         # 100 DAYS OF CODE.
+  # 100 DAYS OF CODE.
 # Day 1
 This code is a basic example of a Java program, demonstrating the fundamental structure of a Java class and the use of the System.out.println method to print text to the console. This type of program is commonly used as an introductory example for learning Java programming, often referred to as the "Hello World" program.
 
