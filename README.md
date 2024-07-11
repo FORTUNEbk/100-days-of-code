@@ -1,3 +1,4 @@
+                                                                         # 100 DAYS OF CODE.
 # Day 1
 This code is a basic example of a Java program, demonstrating the fundamental structure of a Java class and the use of the System.out.println method to print text to the console. This type of program is commonly used as an introductory example for learning Java programming, often referred to as the "Hello World" program.
 
@@ -146,6 +147,9 @@ The provided Java code demonstrates the usage of a `HashSet` to manage a collect
 
 # Day 21
 The given Java code demonstrates various operations using a `HashMap` to store and manage student roll numbers and names. The program begins by importing the necessary classes from the `java.util` package. Inside the `main` method, a `HashMap` named `students` is initialized with `Integer` keys for roll numbers and `String` values for student names. Five students are then added to the `HashMap` using the `put()` method. The program retrieves and prints the name of the student with roll number 3 using the `get()` method. It checks if roll number 4 exists in the `HashMap` with the `containsKey()` method and prints an appropriate message based on the check's result. Next, the student with roll number 2 is removed from the `HashMap` using the `remove()` method, and the updated size of the `HashMap` is printed. The program then iterates over the `HashMap` twice to print all student names: first using the `keySet()` method to loop through the keys, and then using the `entrySet()` method to loop through the key-value pairs. This code effectively demonstrates how to add, access, check existence, remove, and iterate over elements in a `HashMap`.
+
+# Day 22
+The provided Java code demonstrates the use of the `Stack` class from the `java.util` package to manage a collection of strings. The `main` method begins by creating an instance of a stack called `stack`. It then pushes three strings ("apple", "banana", and "orange") onto the stack. The `pop` method is called to remove the top element from the stack, which is "orange", and this removed item is printed to the console. Next, the `peek` method retrieves the current top element of the stack without removing it, which is "banana", and prints it. The code then checks if the stack contains the string "banana" using the `contains` method, printing an appropriate message based on the result. The current size of the stack is printed using the `size` method. Finally, the `clear` method empties the stack, and the `isEmpty` method confirms that the stack is now empty, with this status printed to the console.
 
 
 
