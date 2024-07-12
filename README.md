@@ -1,4 +1,4 @@
-  # 100 DAYS OF CODE.
+  #                                                                               100 DAYS OF CODE.
 # Day 1
 This code is a basic example of a Java program, demonstrating the fundamental structure of a Java class and the use of the System.out.println method to print text to the console. This type of program is commonly used as an introductory example for learning Java programming, often referred to as the "Hello World" program.
 
@@ -151,7 +151,8 @@ The given Java code demonstrates various operations using a `HashMap` to store a
 # Day 22
 The provided Java code demonstrates the use of the `Stack` class from the `java.util` package to manage a collection of strings. The `main` method begins by creating an instance of a stack called `stack`. It then pushes three strings ("apple", "banana", and "orange") onto the stack. The `pop` method is called to remove the top element from the stack, which is "orange", and this removed item is printed to the console. Next, the `peek` method retrieves the current top element of the stack without removing it, which is "banana", and prints it. The code then checks if the stack contains the string "banana" using the `contains` method, printing an appropriate message based on the result. The current size of the stack is printed using the `size` method. Finally, the `clear` method empties the stack, and the `isEmpty` method confirms that the stack is now empty, with this status printed to the console.
 
-
+# Day 23
+This Java program demonstrates the use of a `Queue` implemented by a `LinkedList` to perform basic queue operations. The program starts by importing the necessary classes from the `java.util` package and defines the `Day23` class with a `main` method. Within the `main` method, a `Queue` of `String` type is initialized and populated with three elements: "Andreah," "Evelyn," and "Tatiana." The contents of the queue are then printed. The head element is removed using the `poll` method, and the removed element is displayed. The queue's state after removal is printed, showing the remaining elements. The program then retrieves and prints the head element using the `peek` method without removing it. It checks if a specific value, "Andreah," exists in the queue using the `contains` method and prints the result. Finally, the program prints the number of elements currently in the queue using the `size` method. This program showcases fundamental queue operations, including addition, removal, inspection, and size determination.
 
 
 
