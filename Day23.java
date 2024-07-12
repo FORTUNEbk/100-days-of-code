@@ -25,5 +25,8 @@ public class Day23 {
 
         int queueSize = queue.size();
         System.out.println("Number of elements in the Queue: " + queueSize);
+
+        queue.clear();
+        System.out.println("Queue after removing all elements: " + queue);
     }
 }
