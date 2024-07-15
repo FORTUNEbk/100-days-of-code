@@ -40,9 +40,9 @@ public class Day26 {
     }
 
     public static void main(String[] args) {
-        Day26 user1 = new Day26("John", "Doe");
-        Day26 user2 = new Day26("john.doe@example.com");
-        Day26 user3 = new Day26("Jane", "Doe", "jane.doe@example.com");
+        Day26 user1 = new Day26("John", "Muchiri");
+        Day26 user2 = new Day26("john.muchiri@gmail.com");
+        Day26 user3 = new Day26("Jane", "wangoi", "jane.wangoigmail.com");
 
         System.out.println(user1);
         System.out.println(user2);
