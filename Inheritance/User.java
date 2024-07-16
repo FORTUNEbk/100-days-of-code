@@ -11,7 +11,6 @@ public class User {
         this.age = age;
     }
 
-    // Getters and setters can be added here
     public String getName() {
         return name;
     }

@@ -3,19 +3,15 @@ package Inheritance;
 import java.util.Arrays;
 
 public class Day27 extends User {
-    // Fields common to both Instructor and Student
     private String[] coursesTaught;
     private String grade;
 
-    // Fields specific to Instructor
     private String qualification;
     private double salary;
 
-    // Fields specific to Student
     private int joiningYear;
     private String[] registeredCourses;
 
-    // Constructor for Instructor
     public Day27(String name, String email, int age, String qualification, String[] coursesTaught, double salary) {
         super(name, email, age);
         this.qualification = qualification;
@@ -23,7 +19,6 @@ public class Day27 extends User {
         this.salary = salary;
     }
 
-    // Constructor for Student
     public Day27(String name, String email, int age, String[] registeredCourses, String grade, int joiningYear) {
         super(name, email, age);
         this.registeredCourses = registeredCourses;
@@ -31,7 +26,6 @@ public class Day27 extends User {
         this.joiningYear = joiningYear;
     }
 
-    // Getters and setters for common fields
     public String[] getCoursesTaught() {
         return coursesTaught;
     }
@@ -48,7 +42,6 @@ public class Day27 extends User {
         this.grade = grade;
     }
 
-    // Getters and setters for Instructor-specific fields
     public String getQualification() {
         return qualification;
     }
@@ -65,7 +58,6 @@ public class Day27 extends User {
         this.salary = salary;
     }
 
-    // Getters and setters for Student-specific fields
     public int getJoiningYear() {
         return joiningYear;
     }
@@ -82,7 +74,6 @@ public class Day27 extends User {
         this.registeredCourses = registeredCourses;
     }
 
-    // Override toString method to display relevant information
     @Override
     public String toString() {
         if (coursesTaught != null) {
@@ -104,13 +95,12 @@ public class Day27 extends User {
         }
     }
 
-    // Example usage in a main method or elsewhere
     public static void main(String[] args) {
         String[] coursesTaught = {"Math", "Physics"};
-        Day27 instructor = new Day27("Alice", "alice@gmail.com", 35, "PhD in Physics", coursesTaught, 75000.0);
+        Day27 instructor = new Day27("Alice", "aliceK@gmail.com", 35, "PhD in Physics", coursesTaught, 75000.0);
 
         String[] registeredCourses = {"Math", "Computer Science"};
-        Day27 student = new Day27("Bob", "bob@gmail.com", 20, registeredCourses, "A", 2022);
+        Day27 student = new Day27("Bob", "boby@gmail.com", 20, registeredCourses, "A", 2022);
 
         System.out.println(instructor.toString());
         System.out.println();
