@@ -169,6 +169,9 @@ The `Day24_Main` class serves as the entry point for the simplified library mana
 # Day 25
 The `Day25` class represents a user with six private fields: `id`, `firstName`, `lastName`, `email`, `city`, and `country`. The class includes a constructor that initializes these fields. It provides getter methods for each field, allowing their values to be accessed, and setter methods, allowing their values to be modified. Additionally, the class has a `getFullname` method that returns the user's full name by concatenating the `firstName` and `lastName` fields. The `main` method demonstrates creating an instance of the `Day25` class with specific values, and then it prints out the user's ID, full name, email, city, and country to the console. This example highlights basic object-oriented programming principles in Java, including encapsulation and the use of getters and setters.
 
+# Day 26
+The `Day26` class is a Java class designed to represent a user with attributes `firstname`, `lastname`, and `email`. It features three constructors to initialize objects with different sets of parameters: one that takes a first name and last name, another that takes only an email, and a third that takes all three attributes. The class includes getter methods for each attribute, allowing access to the private variables. The `toString` method is overridden to provide a readable string representation of a `Day26` object, displaying the first name, last name, and email. In the `main` method, three instances of the `Day26` class are created using the different constructors. These instances are then printed to the console, demonstrating the output format defined by the `toString` method. This class structure supports flexibility in how a `Day26` object can be instantiated, accommodating various use cases for initializing user data.
+
 
 
 
