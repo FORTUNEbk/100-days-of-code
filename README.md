@@ -172,6 +172,9 @@ The `Day25` class represents a user with six private fields: `id`, `firstName`, 
 # Day 26
 The `Day26` class is a Java class designed to represent a user with attributes `firstname`, `lastname`, and `email`. It features three constructors to initialize objects with different sets of parameters: one that takes a first name and last name, another that takes only an email, and a third that takes all three attributes. The class includes getter methods for each attribute, allowing access to the private variables. The `toString` method is overridden to provide a readable string representation of a `Day26` object, displaying the first name, last name, and email. In the `main` method, three instances of the `Day26` class are created using the different constructors. These instances are then printed to the console, demonstrating the output format defined by the `toString` method. This class structure supports flexibility in how a `Day26` object can be instantiated, accommodating various use cases for initializing user data.
 
+# Day 27
+The provided code defines two Java classes within the `Inheritance` package: `User` and `Day27`. The `User` class, which serves as the parent class, contains basic fields such as `name`, `email`, and `age`, along with their respective getters and setters. The `Day27` class extends the `User` class and includes additional fields and constructors to represent both instructors and students. For instructors, it incorporates `qualification`, `coursesTaught`, and `salary`, while for students, it includes `registeredCourses`, `grade`, and `joiningYear`. The class also provides getter and setter methods for these fields. The `toString` method is overridden to display detailed information based on whether the instance represents an instructor or a student. The `main` method demonstrates creating instances of both instructor and student and prints their details.
+
 
 
 
