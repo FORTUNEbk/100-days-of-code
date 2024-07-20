@@ -181,6 +181,8 @@ The `Day28` class contains a `main` method which begins by creating an instance 
 # Day 29
 The `Day29` class demonstrates inheritance and method overriding in Java through nested `User` and `Instructor` classes. The `User` class has fields for `firstname` and `lastname`, along with methods to retrieve these values and a method `getFullname` that returns the full name. The `Instructor` class extends `User` and overrides the `getFullname` method to prepend "Prof." to the full name. In the `main` method, an instance of `User` is created with the name "Fortune Kanyangi" and its full name is printed. Then, an instance of `Instructor` is created with the name "Jane Mwirigi", and the overridden full name, which includes the "Prof." prefix, is printed.
 
+# Day 30
+The code defines an abstract class `User` with private fields `name` and `email`, along with their respective getters and setters. The class constructor initializes these fields, and an abstract method `displayUserInfo` is declared, which must be implemented by any subclass. The `AdminUser` class extends `User` and provides a concrete implementation for the `displayUserInfo` method, printing the user's name and email with a specific format. The `Day30` class contains the `main` method, which creates an instance of `AdminUser` with sample data and calls the `displayUserInfo` method to demonstrate the functionality. This setup showcases inheritance and polymorphism, as the `AdminUser` subclass provides specific behavior for the abstract method defined in the `User` superclass.
 
 
 
