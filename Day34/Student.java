@@ -16,7 +16,6 @@ public class Student {
     @Max(value = 100, message = "Age must be less than or equal to 100")
     private Integer age;
 
-    // Constructor
     public Student(Integer id, String name, String email, Integer age) {
         this.id = id;
         this.name = name;
@@ -24,7 +23,6 @@ public class Student {
         this.age = age;
     }
 
-    // Getters and setters
     public Integer getId() {
         return id;
     }
