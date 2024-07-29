@@ -208,4 +208,11 @@ The `Main` class in this code demonstrates reading and processing data from both
 # Day 38
 The provided Java code includes three distinct classes, each demonstrating specific exception handling techniques. The `DivisionCalculator` class attempts to divide two integers, `num1` and `num2`, using a `divide` method. When `num2` is zero, an `ArithmeticException` is caught, and a message is printed to indicate that division by zero is not allowed. The `FileReaderExample` class reads and prints the contents of a file named `example.txt` using a `Scanner`. If the file is not found, a `FileNotFoundException` is caught, and an error message prompts the user to check the file path. Lastly, the `SquareCalculator` class prompts the user to enter an integer, reads the input, and calculates its square. If the input is not a numeric value, a `NumberFormatException` is caught, and an error message is displayed, instructing the user to enter a valid number. Each class demonstrates effective handling of common runtime exceptions to ensure robust and user-friendly program behavior.
 
+# Day 39
+The provided code consists of four separate Java programs, each demonstrating the use of streams and lambdas for different tasks. The first program, `FilterStrings`, filters a list of strings to retain only those that start with the letter "b" and prints the filtered list. The second program, `FilterStudents`, reads student data from a CSV file, filters the students with grades greater than 3, and prints the filtered list of students. It uses `BufferedReader` to read the file, splits each line by a comma, and maps the data to a `Student` object. The `Student` class is defined within the same program with `name` and `grade` attributes.
+
+The third program, `MapToSquares`, takes a list of integers, maps each integer to its square, and prints the resulting list of squares. The fourth program, `ParallelPrimeFinder`, finds prime numbers in a list of integers using a parallel stream, which allows concurrent processing. It defines a method `isPrime` to check for prime numbers and uses this method in the `filter` operation of the parallel stream. The filtered list of prime numbers is then printed.
+
+Together, these programs illustrate how Java streams and lambdas can be used to perform various data processing tasks in a concise and functional programming style.
+
 
