@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="Day38/|Day47/DemoApp/src/main/java/|Day35/|Day42/|Day41/|Day40/|Day47/DemoApp/src/test/java/|Day39/" kind="src" path=""/>
+	<classpathentry kind="src" path="Day35"/>
+	<classpathentry kind="src" path="Day38"/>
+	<classpathentry kind="src" path="Day39"/>
+	<classpathentry kind="src" path="Day40"/>
+	<classpathentry kind="src" path="Day41"/>
+	<classpathentry kind="src" path="Day42"/>
+	<classpathentry kind="src" path="Day47/DemoApp/src/main/java"/>
+	<classpathentry kind="src" path="Day47/DemoApp/src/test/java"/>
+	<classpathentry kind="output" path="Day45/out/production/Day45"/>
+</classpath>
