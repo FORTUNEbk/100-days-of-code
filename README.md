@@ -226,3 +226,40 @@ The provided code consists of three Java classes that demonstrate the use of reg
 
 # Day 42
 This Java code demonstrates how to establish a connection to a MySQL database using JDBC (Java Database Connectivity). The program defines a `Main` class with a `main` method, where the database URL, username, and password are specified as strings. The JDBC URL points to a MySQL database named `demo` located on the local machine. Using the `DriverManager.getConnection()` method, the code attempts to establish a connection to the database using the provided credentials. If the connection is successful, a confirmation message is printed to the console, and the connection is then closed. If any issues occur during the connection process, such as incorrect credentials or database unavailability, an `SQLException` is caught, and an error message is printed, along with the stack trace for debugging purposes. This code provides a basic example of connecting to a database and handling potential connection errors in Java.
+
+# Day 43
+This Java code consists of two classes: `DatabaseOperations` and `Main`, designed to perform basic CRUD (Create, Read, Update, Delete) operations on an "Instructors" table in a MySQL database.
+The `DatabaseOperations` class handles the connection to the database and provides methods to insert, read, update, and delete instructor records. The `connect()` method establishes a connection to the "school" database using specified credentials. The `insertInstructor()` method adds a new instructor's details to the database. The `readInstructors()` method retrieves and displays all instructor records. The `updateInstructor()` method updates the salary of an instructor based on their ID. The `deleteInstructor()` method removes an instructor's record by ID.
+The `Main` class tests these operations. It creates an instance of `DatabaseOperations`, inserts a new instructor, reads and displays all instructors, updates the salary of the instructor with ID 1, and then deletes that instructor. If any database error occurs, it catches and prints the error message.
+
+# Day 44
+
+This Java code demonstrates two examples using JDBC: one for using a `PreparedStatement` to insert data into a database, and another for handling transactions.
+The first example, `PreparedStatementExample`, connects to a MySQL database named `testdb` and prepares an SQL query to insert a student's name and age into a `students` table. Using a `PreparedStatement`, it sets the values for the query parameters and executes the insertion, printing a success message if the operation completes without errors.
+The second example, `TransactionExample`, also connects to the `testdb` database but demonstrates how to manage transactions. It disables the default auto-commit mode to manually control when changes are saved. The code attempts two operations: inserting a student into the `students` table and updating an account balance in an `accounts` table. If both operations succeed, it commits the transaction, making all changes permanent. If an error occurs during either operation, it rolls back the transaction, undoing all changes to maintain data consistency.
+
+# Day 45
+
+This Java code consists of three examples showcasing database operations using JDBC.
+The first example, `DatabaseMetadataExample`, connects to a MySQL database (`Sample_db`) and retrieves metadata information such as schemas, tables, columns, and indexes using the `DatabaseMetaData` class. It prints out the schema names, table names, column names and types, and index details for a specified table.
+The second example, `RetrieveData`, connects to a different MySQL database (`yourdatabase`) and retrieves data from a `users` table using a `PreparedStatement`. It fetches and prints the ID, name, and email of each user in the table.
+The third example, `UpdateMetadata`, connects to the `Sample_db` database and modifies the structure of an existing table (`yourtable`) by adding a new column (`new_column`) using an `ALTER TABLE` SQL command. It confirms the update by printing a success message. All these examples include error handling to catch and display any `SQLException` that may occur during database operations.
+
+# Day 46
+
+This Java code demonstrates batch processing using JDBC to efficiently insert multiple records into a MySQL database. The code connects to a database (`Sample_db`) and prepares an SQL `INSERT` statement to add student names and ages to a `students` table. It disables the default auto-commit mode to manually control when the changes are saved. The code then adds three sets of student data (John Doe, Jane Smith, and Mike Brown) to the batch. After all the data is added, the batch is executed in one go, and the transaction is committed, ensuring that all the records are inserted together. If an error occurs, the code handles the exception and prints the stack trace.
+
+# Day 47
+
+This Java code is a simple Spring Boot application setup. The `@SpringBootApplication` annotation marks the `DemoAppApplication` class as the main entry point for the Spring Boot application. Inside the `main` method, the `SpringApplication.run()` method is called, which launches the application. This code sets up the basic structure of a Spring Boot application, allowing you to build and run it with minimal configuration.
+
+# Day 48
+# MyApp
+This Spring Boot application consists of two classes: `Dev` and `MyAppApplication`. The `Dev` class is a simple component annotated with `@Component`, which makes it a Spring-managed bean. It has a method `build()` that prints a message indicating that it's working on an awesome project. The `MyAppApplication` class is the main entry point of the application, annotated with `@SpringBootApplication`. When the application runs, it creates an `ApplicationContext` that manages the beans. The `Dev` bean is retrieved from the context and its `build()` method is called, which outputs the message to the console. This code demonstrates basic dependency injection and bean management in Spring.
+
+# Simple Web App
+This Spring Boot project consists of three main components: controllers, models, and services, which work together to create a simple web application.
+In the **Controller** package, three classes are defined. The `HomeController` handles requests to the root URL ("/") and returns a welcome message. The `LoginController` responds to the "/login" URL, displaying a login page message. The `ProductController` is responsible for managing products, and it uses the `ProductService` class to fetch a list of products when a user accesses the "/products" URL. 
+The **Model** package contains the `Product` class, which defines the structure of a product with attributes like `prodID`, `prodName`, and `price`. It also includes constructors, getters, and setters to manage these attributes.
+In the **Service** package, the `ProductService` class is implemented. It contains a hardcoded list of products, simulating a database. The `getProducts()` method returns this list when called by the `ProductController`.
+This setup demonstrates a basic Spring Boot application structure, where controllers handle incoming requests, models define the data structure, and services manage the application's business logic.
